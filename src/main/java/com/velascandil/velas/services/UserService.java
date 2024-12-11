@@ -1,7 +1,7 @@
 package com.velascandil.velas.services;
 
-public interface UserService <T> {
+import com.velascandil.velas.entities.User;
+import com.velascandil.velas.models.UserRegisterDto;
 
-    T create (T t);
-
+public interface UserService extends CrudService<UserRegisterDto, User, User>{
 }
